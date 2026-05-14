@@ -2690,5 +2690,16 @@ document.querySelectorAll('[data-chip]').forEach(chip=>{
   chip.addEventListener('click', ()=> chip.classList.toggle('is-active'));
 });
 </script>
+
+<script>
+if (
+  location.hostname.includes("github.io")
+) {
+  document.write('<base href="/mckbytes-demo/">');
+} else {
+  document.write('<base href="/">');
+}
+</script>
+
 </body>
 </html>

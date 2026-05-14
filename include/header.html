@@ -1009,5 +1009,16 @@ document.querySelectorAll('[data-drawer-group] > button').forEach(btn=>{
   });
 });
 </script>
+
+<script>
+if (
+  location.hostname.includes("github.io")
+) {
+  document.write('<base href="/mckbytes-demo/">');
+} else {
+  document.write('<base href="/">');
+}
+</script>
+
 </body>
 </html>
